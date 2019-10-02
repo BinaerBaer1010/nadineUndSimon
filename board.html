@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="board.css" type="text/css">
+    <title>Planningboard</title>
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="Header">
+    <header></header>
 
-        </div>
-        <div class="Sidebar">
+    <sidebar></sidebar>
 
+    <content>
+        <div id="board_area">
+            <div class="box_list">
+                <h3>To Do Liste</h3>
+                <div onclick="newItem()" class="add_icon">+</div>
+                <ul class="liste">
+                    <li>xy</li>
+                </ul>
+            </div>
         </div>
-        <div class="Content">
+    </content>
 
-        </div>
-    </div>
 </body>
 
 </html>
