@@ -1,8 +1,8 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 0.2fr 1.8fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.8fr 1fr;
-    grid-template-areas: "Header Header Header Header" "Sidebar Content Content Content" "Sidebar Content Content Content";
+    grid-template-columns: 0.1fr 1.2fr;
+    grid-template-rows: 0.1fr 1.2fr;
+    grid-template-areas: "Header Header" "Sidebar Content";
 }
 
 .Header {
