@@ -26,6 +26,7 @@ function newItem() {
     var inputWert = document.getElementById("input_ToDo").value;
     var t = document.createTextNode(inputWert);
     li.appendChild(t);
+
     if (inputWert === '') {
         alert("Ungültige Eingabe! Bitte ToDo eingeben!");
     } else {

@@ -45,8 +45,6 @@ content {
     display: table;
 }
 
-.box_list h4 {}
-
 .add_Button {
     font-weight: bold;
     cursor: pointer;
@@ -68,9 +66,9 @@ ul li {
 
 .close {
     position: absolute;
-    right: 0;
+    right: 6px;
     top: 0;
-    padding: 6px 10px;
+    padding: 8px 12px;
 }
 
 .close:hover {
@@ -80,15 +78,17 @@ ul li {
 
 input {
     margin-left: -3px;
+    margin-right: 22px;
     border: none;
     padding: 6px 3px;
     float: left;
+    width: 200px;
 }
 
 .addButton {
-    width: 30px;
-    padding: 7px 2px;
-    float: left;
+    width: 28px;
+    padding: 7px 1px;
+    float: right;
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
