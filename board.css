@@ -45,12 +45,6 @@ content {
     display: table;
 }
 
-.add_Button {
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 20px;
-}
-
 #meineListe {
     margin: 0;
     padding: 0;
@@ -64,18 +58,6 @@ ul li {
     background-color: white;
 }
 
-.close {
-    position: absolute;
-    right: 6px;
-    top: 0;
-    padding: 8px 12px;
-}
-
-.close:hover {
-    background-color: black;
-    color: white;
-}
-
 input {
     margin-left: -3px;
     margin-right: 22px;
@@ -85,15 +67,30 @@ input {
     width: 200px;
 }
 
-.addButton {
+#addButton {
     width: 28px;
     padding: 7px 1px;
     float: right;
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
+    margin-left: 0;
 }
 
-.addButton:hover {
+#addButton:hover {
     background-color: #bbb;
+}
+
+.close {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    padding: 8px 1px;
+    width: 28px;
+    text-align: center;
+}
+
+.close:hover {
+    background-color: black;
+    color: white;
 }

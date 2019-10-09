@@ -20,17 +20,20 @@ for (i = 0; i < close.length; i++) {
     }
 }
 
-// Create a new list item when clicking on the "Add" button
+// Neues List-Item beim Klicken auf den "+"-Button oder Enter
+
+
 function newItem() {
     var li = document.createElement("li");
     var inputWert = document.getElementById("input_ToDo").value;
     var t = document.createTextNode(inputWert);
     li.appendChild(t);
 
-    if (inputWert === '') {
-        alert("Ungültige Eingabe! Bitte ToDo eingeben!");
-    } else {
+    if (inputWert !== '') {
         document.getElementById("meineListe").appendChild(li);
+
+    } else {
+        alert("Ungültige Eingabe! Bitte ToDo eingeben!");
     }
     document.getElementById("input_ToDo").value = "";
 
