@@ -30,12 +30,30 @@ content {
 
 /*Mittiger Bereich der ToDo-Listen*/
 
-#board_area {
+#list_area {
     position: relative;
-    margin: 4em 1em;
     max-width: 270px;
     background-color: white;
     padding: 6px;
+    float: left;
+}
+
+.list_areaClass {
+    margin: 0 1em;
+    width: 270px;
+    background-color: white;
+    padding: 6px;
+    float: left;
+}
+
+.titelListe {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#content_area {
+    margin: 4em 1em;
+    float: left;
 }
 
 .box_list {
@@ -67,7 +85,7 @@ input {
     width: 200px;
 }
 
-#addButton {
+.addButton {
     width: 28px;
     padding: 7px 1px;
     float: right;
@@ -84,7 +102,7 @@ input {
 .close {
     position: absolute;
     right: 8px;
-    top: 0;
+    top: 0px;
     padding: 8px 1px;
     width: 28px;
     text-align: center;
@@ -93,4 +111,55 @@ input {
 .close:hover {
     background-color: black;
     color: white;
+}
+
+
+/*Beim Hovern über den Close-Button - Automatisches Hovern über bttnBereich*/
+
+.close:hover+.bttnBereich {
+    background-color: black;
+    color: white;
+}
+
+.bttnBereich {
+    position: absolute;
+    float: right;
+    width: 60px;
+    height: 60px;
+    right: -50px;
+    top: 0px;
+    z-index: 5;
+}
+
+
+/*Klasse der Icons (Löschen, Hinzufügen, Edit)*/
+
+.bttnBereichIcons {
+    width: 20px;
+    padding: 5px;
+    opacity: 0.5;
+}
+
+.neue_liste {
+    margin: 0 1em;
+    width: 270px;
+    background-color: white;
+    padding: 6px;
+    float: left;
+    display: flex;
+}
+
+.neue_ListeClass {
+    max-width: 270px;
+    height: auto;
+    padding: 6px;
+    display: table;
+}
+
+#neue_listeTitel {
+    color: black;
+}
+
+#neuesFormular {
+    vertical-align: center;
 }

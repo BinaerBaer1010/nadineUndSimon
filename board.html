@@ -17,18 +17,28 @@
     <sidebar></sidebar>
 
     <content>
-        <div id="board_area">
-            <div id="myToDo" class="box_list">
-                <h4>Beispielliste</h4>
-                <form action="#" onsubmit="return newItem()">
-                    <input type="text" id="input_ToDo" placeholder="Was musst du erledigen?">
-                    <span onclick="newItem()" id="addButton">+</span>
-                </form>
+        <div id="content_area">
+            <div id="list_area" class="list_areaClass">
+                <div class="box_list">
+                    <h4>Beispielliste</h4>
+                    <form action="#" onsubmit="return newItem()">
+                        <input type="text" id="input_ToDo" placeholder="Was musst du erledigen?">
+                        <div onclick="newItem()" class="addButton">+</div>
+                    </form>
+                </div>
+                <ul id="meineListe">
+                </ul>
             </div>
-            <ul id="meineListe">
 
-            </ul>
-        </div>
+            <div class="neue_liste">
+                <div id="neue_listeID" class="neue_ListeClass">
+                    <form action="#" onsubmit="return newList()" name="neueListe" id="neuesFormular">
+                        <input type="text" id="input_titel" placeholder="Neue Liste hinzufügen">
+                        <div onclick="newList()" class="addButton">+</div>
+                    </form>
+                </div>
+                <h4 id="neue_listeTitel"></h4>
+            </div>
     </content>
 
 </body>
