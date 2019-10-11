@@ -17,54 +17,31 @@
 
     </header>
 
-    <sidebar id="sidebar">
-        <div class="sidebar_content">
-            <table>
-                <tr>
-                    <td>
-                        <img class="sidebar_contentImg" id="picture_1" src="pictures/add_icon.PNG">
-                    </td>
-                    <th>
-                        Neues Board
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <img class="sidebar_contentImg" id="picture_2" src="pictures/person_icon.PNG">
-                    </td>
-                    <th>
-                        Meine Aufgaben
-                    </th>
-                </tr>
-            </table>
+    <sidebar></sidebar>
 
-
-        </div>
-
-        <div class="toggle_btn" onclick="toggleSidebar()">
-            <img id="toggle_icon" onclick="changeImage()" src=" pictures/right_icon.PNG ">
-        </div>
-
-    </sidebar>
-
-    <content id="content">
-        <div id="board_area ">
-            <div id="myToDo " class="box_list ">
-                <h4>Beispielliste</h4>
-                <input type="text " id="input_ToDo " placeholder="Was musst du erledigen? ">
-                <span onclick="newItem() " class="addButton ">+</span>
-            </div>
-            <ul id="meineListe ">
-
-                <div class="neue_liste">
-                    <div id="neue_listeID" class="neue_ListeClass">
-                        <form action="#" onsubmit="return newList()" name="neueListe" id="neuesFormular">
-                            <input type="text" id="input_titel" placeholder="Neue Liste hinzufügen">
-                            <div onclick="newList()" class="addButton">+</div>
-                        </form>
-                    </div>
-                    <h4 id="neue_listeTitel"></h4>
+    <content>
+        <div id="content_area">
+            <div id="list_area" class="list_areaClass">
+                <div class="box_list">
+                    <h4>Beispielliste</h4>
+                    <form action="#" onsubmit="return newItem()">
+                        <input type="text" id="input_ToDo" placeholder="Was musst du erledigen?">
+                        <div onclick="newItem()" class="addButton">+</div>
+                    </form>
                 </div>
+                <ul id="meineListe">
+                </ul>
+            </div>
+
+            <div class="neue_liste">
+                <div id="neue_listeID" class="neue_ListeClass">
+                    <form action="#" onsubmit="return newList()" name="neueListe" id="neuesFormular">
+                        <input type="text" id="input_titel" placeholder="Neue Liste hinzufügen">
+                        <div onclick="newList()" class="addButton">+</div>
+                    </form>
+                </div>
+                <h4 id="neue_listeTitel"></h4>
+            </div>
     </content>
 
 </body>
