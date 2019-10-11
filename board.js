@@ -110,9 +110,4 @@ function changeImage() {
     } else {
         image.src = "pictures/right_icon.PNG";
     }
-=======
-
-    var Ausgabebereich = document.getElementById('content_area');
-    Ausgabebereich.appendChild(div);
->>>>>>> Simon/master
 }
