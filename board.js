@@ -90,7 +90,6 @@ function newList() {
     boxlist.appendChild(form);
     div.appendChild(boxlist);
 
-<<<<<<< HEAD
     for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
             var div = this.parentElement;
