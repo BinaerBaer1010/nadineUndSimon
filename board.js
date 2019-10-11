@@ -90,7 +90,36 @@ function newList() {
     boxlist.appendChild(form);
     div.appendChild(boxlist);
 
+<<<<<<< HEAD
 
     var Ausgabebereich = document.getElementById('content_area');
     Ausgabebereich.appendChild(div);
+=======
+<<<<<<< HEAD
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+}
+
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle('active');
+    document.getElementById("content").classList.toggle('active');
+}
+
+function changeImage() {
+    var image = document.getElementById('toggle_icon');
+    if (image.src.match("right")) {
+        image.src = "pictures/left_icon.PNG";
+    } else {
+        image.src = "pictures/right_icon.PNG";
+    }
+=======
+
+    var Ausgabebereich = document.getElementById('content_area');
+    Ausgabebereich.appendChild(div);
+>>>>>>> 6ad5775aa669e32eb14feb621665d2ecd94f42c8
+>>>>>>> second
 }
