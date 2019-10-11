@@ -4,7 +4,7 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: 40px 1fr;
+    grid-template-rows: 45px 1fr;
     grid-template-columns: 180px 1fr;
     grid-template-areas: "header header" "sidebar content";
     margin: 0;
@@ -116,7 +116,7 @@ input {
 
 /*Beim Hovern über den Close-Button - Automatisches Hovern über bttnBereich*/
 
-.close:hover+.bttnBereich {
+.close:hover~.bttnBereich {
     background-color: black;
     color: white;
 }
@@ -137,7 +137,12 @@ input {
 .bttnBereichIcons {
     width: 20px;
     padding: 5px;
-    opacity: 0.5;
+    opacity: 1;
+}
+
+#homebutton {
+    width: 30px;
+    margin: 7px;
 }
 
 .neue_liste {
@@ -145,7 +150,7 @@ input {
     width: 270px;
     background-color: white;
     padding: 6px;
-    float: left;
+    float: right;
     display: flex;
 }
 

@@ -90,6 +90,7 @@ function newList() {
     boxlist.appendChild(form);
     div.appendChild(boxlist);
 
+
     var Ausgabebereich = document.getElementById('content_area');
     Ausgabebereich.appendChild(div);
 }
