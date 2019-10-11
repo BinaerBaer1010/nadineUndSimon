@@ -13,16 +13,44 @@
 <body>
     <header></header>
 
-    <sidebar></sidebar>
+    <sidebar id="sidebar">
+        <div class="sidebar_content">
+            <table>
+                <tr>
+                    <td>
+                        <img class="sidebar_contentImg" id="picture_1" src="pictures/add_icon.PNG">
+                    </td>
+                    <th>
+                        Neues Board
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="sidebar_contentImg" id="picture_2" src="pictures/person_icon.PNG">
+                    </td>
+                    <th>
+                        Meine Aufgaben
+                    </th>
+                </tr>
+            </table>
 
-    <content>
-        <div id="board_area">
-            <div id="myToDo" class="box_list">
+
+        </div>
+
+        <div class="toggle_btn" onclick="toggleSidebar()">
+            <img id="toggle_icon" onclick="changeImage()" src=" pictures/right_icon.PNG ">
+        </div>
+
+    </sidebar>
+
+    <content id="content">
+        <div id="board_area ">
+            <div id="myToDo " class="box_list ">
                 <h4>Beispielliste</h4>
-                <input type="text" id="input_ToDo" placeholder="Was musst du erledigen?">
-                <span onclick="newItem()" class="addButton">+</span>
+                <input type="text " id="input_ToDo " placeholder="Was musst du erledigen? ">
+                <span onclick="newItem() " class="addButton ">+</span>
             </div>
-            <ul id="meineListe">
+            <ul id="meineListe ">
 
             </ul>
         </div>

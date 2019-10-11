@@ -47,3 +47,17 @@ function newItem() {
         }
     }
 }
+
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle('active');
+    document.getElementById("content").classList.toggle('active');
+}
+
+function changeImage() {
+    var image = document.getElementById('toggle_icon');
+    if (image.src.match("right")) {
+        image.src = "pictures/left_icon.PNG";
+    } else {
+        image.src = "pictures/right_icon.PNG";
+    }
+}
